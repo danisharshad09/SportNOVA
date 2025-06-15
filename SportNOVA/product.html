@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SportNOVA | Products</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <div class="logo">SportNOVA</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="product.html">Products</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="cart.html" class="cart-link">🛒 Cart</a>
+    </nav>
+    <button id="theme-toggle" class="btn">Toggle Dark Mode</button>
+  </header>
+
+  <section class="hero">
+    <h1>All Products</h1>
+    <p>Browse our full collection of sports gear.</p>
+  </section>
+
+  <!-- 🏷️ Featured Products -->
+  <section class="product-gallery">
+    <h2>🏆 Featured Products</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <span class="hot-badge">🔥 HOT</span>
+        <img src="img/product/ball 1.webp" alt="Nike Premier League 2024/25 Flight Football">
+        <h3>Nike Premier League 2024/25 Flight Football</h3>
+        <p><span class="old-price">RM1258</span> <strong>RM700</strong></p>
+        <button onclick="addToCart('Nike Premier League 2024/25 Flight Football', 700)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <span class="hot-badge">🔥 HOT</span>
+        <img src="img/product/baseball 1.webp" alt="Demarini 2022 The Goods -3 Bbcor Baseball Bat">
+        <h3>Demarini 2022 The Goods -3 Bbcor Baseball Bat</h3>
+        <p><span class="old-price">RM4272</span> <strong>RM2211</strong></p>
+        <button onclick="addToCart('Demarini 2022 The Goods -3 Bbcor Baseball Bat', 2211)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <span class="hot-badge">🔥 HOT</span>
+        <img src="img/product/badminton 1.webp" alt="Li-Ning Bladex 800 ZN Limited Edition Badminton Racket">
+        <h3>Li-Ning Bladex 800 ZN Limited Edition Badminton Racket</h3>
+        <p><span class="old-price">RM1688</span> <strong>RM800</strong></p>
+        <button onclick="addToCart('Li-Ning Bladex 800 ZN Limited Edition Badminton Racket', 800)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="img/product/ball 2.webp" alt="Puma Orbita Ultimate Premier League Brilliance Football">
+        <h3>Puma Orbita Ultimate Premier League Brilliance Football</h3>
+        <p><strong>RM579</strong></p>
+        <button onclick="addToCart('Puma Orbita Ultimate Premier League Brilliance Football', 579)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="img/product/ball 3.webp" alt="Molten F5A4800 FIFA Quality Pro">
+        <h3>Molten F5A4800 FIFA Quality Pro</h3>
+        <p><strong>RM209</strong></p>
+        <button onclick="addToCart('Molten F5A4800 FIFA Quality Pro', 209)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="img/product/ball 5.webp" alt="Nike Hypervenom Phantom II NJR x Jordan Firm-Ground Football Boot">
+        <h3>Nike Hypervenom Phantom II NJR x Jordan Firm-Ground Football Boot</h3>
+        <p><strong>RM3878</strong></p>
+        <button onclick="addToCart('Nike Hypervenom Phantom II NJR x Jordan Firm-Ground Football Boot', 3878)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="img/product/ball 4.webp" alt="Nike Vapor 15 Academy Mercurial Dream Speed MG Low-Top Soccer Cleats ">
+        <h3>Nike Vapor 15 Academy Mercurial Dream Speed MG Low-Top Soccer Cleats </h3>
+        <p><strong>RM499</strong></p>
+        <button onclick="addToCart('Nike Vapor 15 Academy Mercurial Dream Speed MG Low-Top Soccer Cleats ', 499)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="img/product/badminton 2.webp" alt="Kevenz 2-pack Badminton Rackets, Professional Carbon Fiber Badminton Racquets">
+        <h3>Kevenz 2-pack Badminton Rackets, Professional Carbon Fiber Badminton Racquets</h3>
+        <p><strong>RM399</strong></p>
+        <button onclick="addToCart('Kevenz 2-pack Badminton Rackets, Professional Carbon Fiber Badminton Racquets', 399)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="img/product/badminton 3.webp" alt="Yonex 2 Player Badminton Set">
+        <h3>Yonex 2 Player Badminton Set</h3>
+        <p><strong>RM169</strong></p>
+        <button onclick="addToCart('Yonex 2 Player Badminton Set', 169)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="img/product/badminton 4.webp" alt="Yonex Badminton Practice Shuttlecock Aero Sensor 400 #4 AS400 10 dozen 120 pieces">
+        <h3>Yonex Badminton Practice Shuttlecock Aero Sensor 400 #4 AS400 10 dozen 120 pieces</h3>
+        <p><strong>RM1959</strong></p>
+        <button onclick="addToCart('Yonex Badminton Practice Shuttlecock Aero Sensor 400 #4 AS400 10 dozen 120 pieces', 1959)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="img/product/badminton 5.webp" alt="Li-Ning D6 Feather Shuttlecock | High-Performance Badminton Shuttlecock">
+        <h3>Li-Ning D6 Feather Shuttlecock | High-Performance Badminton Shuttlecock</h3>
+        <p><strong>RM315</strong></p>
+        <button onclick="addToCart('Li-Ning D6 Feather Shuttlecock | High-Performance Badminton Shuttlecock', 315)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="img/product/bsball 1.webp" alt="Wilson NBA Oversized Basketball">
+        <h3>Wilson NBA Oversized Basketball</h3>
+        <p><strong>RM839</strong></p>
+        <button onclick="addToCart('Wilson NBA Oversized Basketball', 839)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="img/product/bsball 2.webp" alt="Wilson NCAA Composite Basketball">
+        <h3>Wilson NCAA Composite Basketball</h3>
+        <p><strong>RM439</strong></p>
+        <button onclick="addToCart('Wilson NCAA Composite Basketball', 439)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="img/product/bsball 3.webp" alt="Molten GGX Synthetic Basketball Tan 7,Molten">
+        <h3>Molten GGX Synthetic Basketball Tan 7,Molten</h3>
+        <p><strong>RM115</strong></p>
+        <button onclick="addToCart('Molten GGX Synthetic Basketball Tan 7,Molten', 115)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="img/product/bsball 4.webp " alt="Nike Kobe 6 Protro Reverse Grinch">
+        <h3>Nike Kobe 6 Protro Reverse Grinch</h3>
+        <p><strong>RM2816</strong></p>
+        <button onclick="addToCart('Nike Kobe 6 Protro Reverse Grinch', 2816)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="img/product/bsball 5.webp" alt="Nike Precision 7 EasyOn Men's Basketball Shoes">
+        <h3>Nike Precision 7 EasyOn Men's Basketball Shoes</h3>
+        <p><strong>RM295</strong></p>
+        <button onclick="addToCart('Nike Precision 7 EasyOn Mens Basketball Shoes', 295)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="img/product/baseball 2.webp" alt="Rawlings ICON Baseball Bat USSSA">
+        <h3>Rawlings ICON Baseball Bat USSSA</h3>
+        <p><strong>RM1919</strong></p>
+        <button onclick="addToCart('Rawlings ICON Baseball Bat USSSA', 1919)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="img/product/baseball 3.webp" alt="Easton Tango T-Ball Baseball Bat">
+        <h3>Easton Tango T-Ball Baseball Bat</h3>
+        <p><strong>RM129</strong></p>
+        <button onclick="addToCart('Easton Tango T-Ball Baseball Bat', 129)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="img/product/baseball 4.webp" alt="Diamond Sports Dol-1 Hs | 30 Leather High School Baseballs With 6-gallon Ball Bucket ">
+        <h3>Diamond Sports Dol-1 Hs | 30 Leather High School Baseballs With 6-gallon Ball Bucket </h3>
+        <p><strong>RM2185</strong></p>
+        <button onclick="addToCart('Diamond Sports Dol-1 Hs | 30 Leather High School Baseballs With 6-gallon Ball Bucket ', 2185)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="img/product/baseball 5.webp" alt="RawlingsOfficial League Recreational Use Practice Baseballs">
+        <h3>RawlingsOfficial League Recreational Use Practice Baseballs</h3>
+        <p><strong>RM350</strong></p>
+        <button onclick="addToCart('RawlingsOfficial League Recreational Use Practice Baseballs', 350)">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 SportNOVA. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

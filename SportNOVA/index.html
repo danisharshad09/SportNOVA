@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SportNOVA | Home</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <div class="logo">SportNOVA</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="product.html">Products</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="cart.html" class="cart-link">🛒 Cart</a>
+    </nav>
+    <button id="theme-toggle" class="btn">Toggle Dark Mode</button>
+  </header>
+
+  <section class="hero">
+    <h1>Unleash Your Inner Champion</h1>
+    <p>Explore premium sports gear at unbeatable prices.</p>
+    <a href="product.html" class="btn">Shop Now</a>
+  </section>
+
+  <!-- 🎞️ Slider Section -->
+<section class="slider">
+  <div class="slides">
+    <img src="img/slider/slider 1.webp" alt="Slide 1" class="slide active">
+    <img src="img/slider/slider 2.jpg" alt="Slide 2" class="slide">
+    <img src="img/slider/slider 3.webp" alt="Slide 3" class="slide">
+  </div>
+</section>
+
+
+  <!-- 🔥 Hot Sale Section -->
+  <section class="hot-sale">
+    <h2>🔥 Hot Sale</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <span class="hot-badge">🔥 HOT</span>
+        <img src="img/product/ball 1.webp" alt="Nike Premier League 2024/25 Flight Football">
+        <h3>Nike Premier League 2024/25 Flight Football</h3>
+        <p><span class="old-price">RM1258</span> <strong>RM700</strong></p>
+        <button onclick="addToCart('Nike Premier League 2024/25 Flight Football', 700)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <span class="hot-badge">🔥 HOT</span>
+        <img src="img/product/baseball 1.webp" alt="Demarini 2022 The Goods -3 Bbcor Baseball Bat">
+        <h3>Demarini 2022 The Goods -3 Bbcor Baseball Bat</h3>
+        <p><span class="old-price">RM4272</span> <strong>RM2211</strong></p>
+        <button onclick="addToCart('Demarini 2022 The Goods -3 Bbcor Baseball Bat', 2211)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <span class="hot-badge">🔥 HOT</span>
+        <img src="img/product/badminton 1.webp" alt="Li-Ning Bladex 800 ZN Limited Edition Badminton Racket">
+        <h3>Li-Ning Bladex 800 ZN Limited Edition Badminton Racket</h3>
+        <p><span class="old-price">RM1688</span> <strong>RM800</strong></p>
+        <button onclick="addToCart('Li-Ning Bladex 800 ZN Limited Edition Badminton Racket', 800)">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 📱 Social Media Section -->
+  <section class="social">
+    <h2>Follow Us</h2>
+    <div class="social-icons">
+      <a href="https://www.tiktok.com/" target="_blank" class="social-icon tiktok">TikTok</a>
+      <a href="https://shopee.com.my/" target="_blank" class="social-icon shopee">Shopee</a>
+      <a href="https://www.instagram.com/" target="_blank" class="social-icon instagram">Instagram</a>
+      <a href="https://www.facebook.com/" target="_blank" class="social-icon facebook">Facebook</a>
+    </div>
+  </section>
+
+  <section class="features">
+    <div class="feature">⚡ Fast Shipping</div>
+    <div class="feature">💯 Quality Guaranteed</div>
+    <div class="feature">📦 Easy Returns</div>
+  </section>
+
+  <footer>
+    <p>© 2025 SportNOVA. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
